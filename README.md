@@ -1,5 +1,7 @@
 # JSON::Api
 
+[![Build Status](https://travis-ci.org/json-api/parser-ruby.png)](https://travis-ci.org/json-api/parser-ruby) [![Code Climate](https://codeclimate.com/github/json-api/parser-ruby.png)](https://codeclimate.com/github/json-api/parser-ruby)
+
 A parser and validator for [JSON API](http://jsonapi.org) documents.
 
 ## Installation
