@@ -1,3 +1,22 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#"
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "JSON API Schema",
+  "description": "This is a schema for responses in the JSON API format. For more, see http://jsonapi.org",
+  "type": "object",
+  "patternProperties": {
+    "^(?!href$)(?!links$)(?!id$)(?!meta)(?!linked)": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "properties": {
+    "meta": {
+      "type": "object"
+    },
+    "linked": {
+      "type": "object"
+    }
+  }
 }

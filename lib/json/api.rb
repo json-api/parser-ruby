@@ -15,9 +15,8 @@ module JSON
     end
 
     def self.validate(source, opts={})
-      json = JSON.parse(source) if source.kind_of?(String)
-
-      JSON::Validator.validate!('lib/json/api/schema.json', json)
+      source = JSON.parse(source) if source.kind_of?(String)
+      JSON::Validator.validate!('lib/json/api/schema.json', source)
     end
   end
 end
