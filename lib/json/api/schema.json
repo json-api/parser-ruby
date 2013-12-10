@@ -7,7 +7,8 @@
     "^(?!href$)(?!links$)(?!id$)(?!meta)(?!linked)": {
       "type": "array",
       "items": {
-        "type": "object"
+        "type": "object",
+        "required": ["id"]
       }
     }
   },

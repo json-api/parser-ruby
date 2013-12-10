@@ -22,6 +22,7 @@ JSON
     json = <<-JSON
 {
   "posts": [{
+    "id": 1
   }]
 }
 JSON
@@ -33,7 +34,9 @@ JSON
     json = <<-JSON
 {
   "posts": [{
+    "id": 1
   },{
+    "id": 2
   }]
 }
 JSON
@@ -148,6 +151,7 @@ JSON
     json = <<-JSON
 {
   "posts": [{
+    "id": 1
   }]
 }
 JSON
@@ -159,7 +163,9 @@ JSON
     json = <<-JSON
 {
   "posts": [{
+    "id": 1
   }, {
+    "id": 2
   }]
 }
 JSON
