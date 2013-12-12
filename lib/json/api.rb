@@ -16,7 +16,7 @@ module JSON
 
     def self.validate(source, opts={})
       source = JSON.parse(source) if source.kind_of?(String)
-      JSON::Validator.validate!('lib/json/api/schema.json', source)
+      JSON::Validator.validate!(File.expand_path('api/schema.json', File.dirname(__FILE__)), source)
     end
   end
 end
