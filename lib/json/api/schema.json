@@ -22,7 +22,21 @@
       "type": "object"
     },
     "linked": {
-      "type": "object"
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "links": {
+                "type": "object"
+              }
+            },
+            "required": ["id"]
+          }
+        }
+      }
     }
   }
 }
