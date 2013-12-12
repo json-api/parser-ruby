@@ -28,6 +28,11 @@
           "type": "array",
           "items": {
             "type": "object",
+            "properties": {
+              "links": {
+                "type": "object"
+              }
+            },
             "required": ["id"]
           }
         }
